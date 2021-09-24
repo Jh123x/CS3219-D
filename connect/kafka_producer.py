@@ -15,6 +15,7 @@ def start_producer(ip_servers: list, message:str):
     )
 
     producer.flush()
+    producer.close()
 
 
 if __name__ == "__main__":

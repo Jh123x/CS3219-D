@@ -17,6 +17,8 @@ def start_consumer(ip_servers: list) -> None:
     for c in consumer:
         print(c.value)
 
+    consumer.close()
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
