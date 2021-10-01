@@ -25,5 +25,5 @@ if __name__ == "__main__":
     parser.add_argument("kafka_ip", type=str, nargs='*')
 
     args = parser.parse_args()
-    test = ['localhost:29092', 'localhost:39092']
+    test = ["localhost:19092", "localhost:29092", "localhost:39092"]
     start_consumer(test)

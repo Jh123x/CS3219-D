@@ -1,0 +1,1 @@
+docker run --net=host --rm confluentinc/cp-kafka:latest kafka-topics --describe --topic test --zookeeper localhost:22181

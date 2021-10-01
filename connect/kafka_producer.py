@@ -19,7 +19,7 @@ def start_producer(ip_servers: list, message:str):
 
 
 if __name__ == "__main__":
-    default_servers = ['localhost:29092', 'localhost:39092']
+    default_servers = ["localhost:19092", "localhost:29092", "localhost:39092"]
     parser = argparse.ArgumentParser()
     parser.add_argument("message", type=str)
     parser.add_argument("kafka_ips", type=str, nargs='*')
