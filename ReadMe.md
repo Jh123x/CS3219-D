@@ -27,5 +27,13 @@
 ![Current Config](./images/kafka_setup_initial.png)
 Each node is a leader of a partition
 
+![Send message before](./images/kafka_send_msg_before.png)
+As expected, the producer is able to send messages to the consumer.
+
+Now it is time to kill the master node
+
 ![New config](./images/kafka_setup_final.png)
 By killing the first node (kafka-1_1) and running the command again, we see that there is a new leader of the node. In this case kafka-3 has become the new leader of the partition
+
+![Send message after](./images/kafka_send_msg_after.png)
+The producer is still able to send messages to the consumer after the master has failed
